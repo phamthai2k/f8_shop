@@ -59,4 +59,12 @@
     .header__bars-btn {
         display: block;
     }
+    .header__width-search {
+        justify-content: space-between;
+        margin: 0;
+    }
+    .header__cart,
+    .header__logo {
+        width: unset;
+    }
 }
