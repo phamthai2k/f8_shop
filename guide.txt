@@ -1,0 +1,20 @@
+1. header
+- Navbar ok
+- search
+    + logo
+    + search-history
+    + search - scope
+- cart
+2. content
+- side bar
+- Breadcrumb
+- product-info
+    + images
+    + title
+    + price
+    + vote
+    + sold (đã bán)
+    + brand
+    + origin (xuất xứ)
+- pagination
+3. footer
