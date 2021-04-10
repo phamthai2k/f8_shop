@@ -1,3 +1,7 @@
+#app {
+    overflow: hidden;
+}
+
 #header {
     height: var(--header-heigh);
     background-image: linear-gradient(0, #ff6633, #f53e2d);
@@ -582,8 +586,8 @@
 /* header mobile search */
 
 .header__mobile-search {
-    padding: 0 12px;
-    margin-left: 14px;
+    padding: 0 8px;
+    display: none;
 }
 
 .header__mobile-search-icon {
@@ -601,6 +605,10 @@
 
 .header__logo-img {
     width: 150px;
+}
+
+.header__search-checkbox:checked~.header__search {
+    display: flex;
 }
 
 .header__search {
@@ -792,6 +800,7 @@
 .header__cart {
     width: 150px;
     text-align: center;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__cart-wrap {
@@ -1017,6 +1026,7 @@
     list-style: none;
     align-items: center;
     flex: 1;
+    position: relative;
 }
 
 .header__sort-link {
@@ -1046,6 +1056,15 @@
 
 .header__sort-link--active .header__sort-link {
     color: var(--primary-color);
+}
+
+.header__sort-link--active .header__sort-link::after {
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    width: 100%;
+    left: 0;
+    border-bottom: 3px solid var(--primary-color);
 }
 
 .header__sort-icon {
@@ -1290,6 +1309,65 @@
 }
 
 
+/* mobile category */
+
+.mobile-category {}
+
+.mobile-category__list {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 0;
+}
+
+.mobile-category__list::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile-category__item {
+    list-style: none;
+    flex-shrink: 0;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-category__item:nth-of-type(3n + 1) .mobile-category__link {
+    background-color: #86afd7;
+}
+
+.mobile-category__item:nth-of-type(3n + 2) .mobile-category__link {
+    background-color: #76c9bd;
+}
+
+.mobile-category__item:nth-of-type(3n + 3) .mobile-category__link {
+    background-color: #88cf81;
+}
+
+.mobile-category__link {
+    --line-height: 2rem;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    display: block;
+    width: 108px;
+    line-height: var(--line-height);
+    height: calc(var(--line-height) * 2);
+    height: 40px;
+    text-align: center;
+    font-weight: 300;
+    border-radius: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
 /* product item */
 
 .home-product {
@@ -1482,6 +1560,7 @@ i.home-product-item__like-icon-fill {
 
 .home-product__pagination {
     margin: 48px 0 32px 0;
+    padding-left: 0;
 }
 
 

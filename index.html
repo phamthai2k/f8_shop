@@ -12,9 +12,9 @@
     <link rel="icon" href="./assets/img/logo-shopee.jpg">
     <!-- css -->
     <!-- grid system -->
-    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
@@ -166,8 +166,9 @@
                             </nav>
                         </div>
                         <label for="mobile-search-checkbox" class="header__mobile-search">
-                                <i class="far fa-search header__mobile-search-icon"></i>
-                            </label>
+                            <i class="far fa-search header__mobile-search-icon"></i>
+                        </label>
+
                     </div>
 
                     <div class="header__logo hide-on-tablet">
@@ -181,7 +182,8 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="header__search hide-on-mobile">
+                    <input type="checkbox" hidden name="" id="mobile-search-checkbox" class="header__search-checkbox">
+                    <div class="header__search">
                         <div class="header__search-input-wrap">
                             <input type="text" name="" id="" class="header__search-input" placeholder="Tìm kiếm sản phẩm, thương hiệu, tên shop">
                             <div class="header__search-history">
@@ -346,8 +348,8 @@
         <!-- begin: container -->
         <div id="container">
             <div class="grid wide">
-                <div class="grid__row app__content">
-                    <div class="grid__column-2">
+                <div class="row sm-gutter app__content">
+                    <div class="col l-2 m-0 c-0">
                         <nav class="category">
 
                             <div class="category__logo">
@@ -377,7 +379,7 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="grid__column-10">
+                    <div class="col l-10 m-12 c-12">
                         <!-- begin: home filter -->
                         <div class="home-filer hide-on-mobile-tablet">
                             <span class="home-filter__label">
@@ -414,11 +416,51 @@
                             </div>
                         </div>
                         <!-- end: home filter -->
+                        <nav class="mobile-category">
+                            <ul class="mobile-category__list">
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Laptop</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">PC gaming</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Laptop văn phòng</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Thiết bị Audio</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Chuột + Lót chuột</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Máy in</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">PS5</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Balo thời trang Balo thời trang Balo thời trang</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Phụ kiện</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Ghế Gaming</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Bàn Gaming</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Tai nghe</a>
+                                </li>
+                            </ul>
+                        </nav>
 
                         <!-- begin: home product -->
                         <div class="home-product">
-                            <div class="grid__row">
-                                <div class="grid__column-2-4 ">
+                            <div class="row sm-gutter">
+                                <div class="col l-2-4 m-4 c-6  ">
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(https://anphat.com.vn/media/product/250_35675_31321_laptop_hp_15s_fq1022tu_8vy75pa1.jpg);"></div>
                                         <h5 class="home-product-item__name">Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN</h5>
@@ -457,7 +499,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4 ">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(https://anphat.com.vn/media/product/250_35675_31321_laptop_hp_15s_fq1022tu_8vy75pa1.jpg);"></div>
                                         <h5 class="home-product-item__name">Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN</h5>
@@ -496,7 +538,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4 ">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(https://anphat.com.vn/media/product/250_35675_31321_laptop_hp_15s_fq1022tu_8vy75pa1.jpg);"></div>
                                         <h5 class="home-product-item__name">Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN</h5>
@@ -535,7 +577,7 @@
                                         </div> -->
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4 ">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(https://anphat.com.vn/media/product/250_35675_31321_laptop_hp_15s_fq1022tu_8vy75pa1.jpg);"></div>
                                         <h5 class="home-product-item__name">Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN</h5>
@@ -574,7 +616,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4 ">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(https://anphat.com.vn/media/product/250_35675_31321_laptop_hp_15s_fq1022tu_8vy75pa1.jpg);"></div>
                                         <h5 class="home-product-item__name">Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN</h5>
@@ -613,7 +655,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4 ">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(https://anphat.com.vn/media/product/250_35675_31321_laptop_hp_15s_fq1022tu_8vy75pa1.jpg);"></div>
                                         <h5 class="home-product-item__name">Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN</h5>
@@ -652,7 +694,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4 ">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(https://anphat.com.vn/media/product/250_35675_31321_laptop_hp_15s_fq1022tu_8vy75pa1.jpg);"></div>
                                         <h5 class="home-product-item__name">Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN</h5>
@@ -691,7 +733,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4 ">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(https://anphat.com.vn/media/product/250_35675_31321_laptop_hp_15s_fq1022tu_8vy75pa1.jpg);"></div>
                                         <h5 class="home-product-item__name">Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN</h5>
@@ -730,7 +772,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4 ">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(https://anphat.com.vn/media/product/250_35675_31321_laptop_hp_15s_fq1022tu_8vy75pa1.jpg);"></div>
                                         <h5 class="home-product-item__name">Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN</h5>
@@ -769,7 +811,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4 ">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(https://anphat.com.vn/media/product/250_35675_31321_laptop_hp_15s_fq1022tu_8vy75pa1.jpg);"></div>
                                         <h5 class="home-product-item__name">Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN Laptop MSI GF63 Thin 9SC 400VN</h5>
@@ -860,8 +902,8 @@
         <!-- begin: footer -->
         <footer id="footer">
             <div class="grid wide">
-                <div class="grid__row footer-info">
-                    <div class="grid__column-2-4">
+                <div class="row footer-info">
+                    <div class="col l-2-4">
                         <h4 class="footer__heading">Chăm sóc khách hàng</h4>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -875,7 +917,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4">
                         <h4 class="footer__heading">Về chúng tôi</h4>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -889,7 +931,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4">
                         <h4 class="footer__heading">Danh mục</h4>
                         <ul class="footer-list">
 
@@ -910,7 +952,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4">
                         <h4 class="footer__heading">Theo giõi chúng tôi trên</h4>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -925,7 +967,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4">
                         <h4 class="footer__heading">Tải ứng dụng Shopee ngay nào</h4>
                         <div class="footer-down__wrap">
                             <img class="footer__qr-img" src="./assets/img/qr_code.png" alt="">
@@ -940,11 +982,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid__row footer-language">
+                <div class="row footer-language">
                     <p class="footer__copyright">
                         © 2021 Shopee. Tất cả các quyền được bảo lưu.
                     </p>
-                    <ul class="footer-area-list">
+                    <ul class="footer-area-list m-0 c-0">
                         Quốc gia & Khu vực:
                         <li class="footer-area-item">
                             <a href="" class="footer__area-link">Singapore</a>
@@ -973,7 +1015,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="footer-bottom m-0 c-0">
                 <div class="grid wide">
                     <ul class="footer-policy">
                         <li class="footer-policy__item">
