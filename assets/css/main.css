@@ -538,6 +538,7 @@
     transform: translateX(-100%);
     transition: transform linear 0.2s, opacity linear 0.2s;
     opacity: 0;
+    will-change: transform, opacity;
     z-index: 30;
 }
 
@@ -553,8 +554,6 @@
     transform: translateX(0);
     opacity: 1;
 }
-
-.header__nav-mobile-list {}
 
 .header__nav-mobile-item {
     list-style: none;
