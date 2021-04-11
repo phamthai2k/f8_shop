@@ -144,7 +144,7 @@
                         <div class="header__nav-mobile">
                             <label for="header__nav-mobile-input" class="header__bars-btn">
                                     <i class="far fa-bars header__bars-icon"></i>
-                                </label>
+                             </label>
                             <input class="header__nav-input" type="checkbox" name="" id="header__nav-mobile-input">
                             <label for="header__nav-mobile-input" class="nav__overlay"></label>
                             <nav class="header__nav-mobile-wrap">
@@ -227,11 +227,12 @@
                         </button>
                     </div>
                     <div class="header__cart">
-                        <div class="header__cart-wrap">
+                        <label for="cart-mobile-checkbox" class="header__cart-wrap">
                             <i class="header__cart-icon fal fa-shopping-cart"></i>
                             <span class="header__cart-notify">
                                 12
                             </span>
+                            <input type="checkbox" hidden class="header__cart-checkbox" id="cart-mobile-checkbox">
                             <!-- header__cart---no-cart: no cart -->
                             <div class="header__cart-list">
                                 <img class="header__cart-no-cart-img" src="./assets/img/no-cart.jpg" alt="">
@@ -321,7 +322,7 @@
                                 </div>
 
                             </div>
-                        </div>
+                        </label>
                     </div>
                 </div>
                 <!-- header__sort-link--active: active -->
