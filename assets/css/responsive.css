@@ -84,7 +84,6 @@
     }
     .header__cart {
         margin-right: 16px;
-        transform: translateY(2px);
     }
     .header__cart,
     .header__logo {

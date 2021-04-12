@@ -53,11 +53,10 @@
     font-weight: 400;
 }
 
-
-/* .navbar-list__item a {
+.navbar-list__item a {
     text-decoration: none;
     color: var(--white-color);
-} */
+}
 
 .navbar-list__item--separate:after {
     content: "";
